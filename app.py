@@ -9,8 +9,8 @@ from PIL import Image
 
 BASE_DIR = Path(__file__).parent
 IMG_DIR = BASE_DIR
-KEY_PATH = BASE_DIR / "data" / "answer_key.csv"
-RESULT_PATH = BASE_DIR / "data" / "results.csv"
+KEY_PATH = BASE_DIR / "answer_key.csv"
+RESULT_PATH = BASE_DIR / "results.csv"
 
 st.set_page_config(page_title="Chạy trạm Giải phẫu", layout="wide")
 
