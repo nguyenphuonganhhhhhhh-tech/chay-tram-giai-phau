@@ -8,7 +8,7 @@ import streamlit as st
 from PIL import Image
 
 BASE_DIR = Path(__file__).parent
-IMG_DIR = BASE_DIR / "data" / "images"
+IMG_DIR = BASE_DIR
 KEY_PATH = BASE_DIR / "data" / "answer_key.csv"
 RESULT_PATH = BASE_DIR / "data" / "results.csv"
 
@@ -79,7 +79,7 @@ st.caption("Dành cho ảnh đã được đánh số. Sinh viên điền tên c
 
 images = list_images()
 if not images:
-    st.error("Chưa có ảnh trong thư mục data/images.")
+    st.error("Chưa có ảnh trong thư mục chính của GitHub.")
     st.stop()
 
 key_df = load_key()
